@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Said, web developer</title>
+    <meta name="keywords"
+        content="cv, portfolio, resume, work, freelance, webmaster, web, web developer, developer, php, mysql, laravel, html, css, scss, bem, javascript, js, vue, react, docker, linux, git">
+    <meta name="description"
+        content="Web developer. Skills: PHP, MySQL, PostgreSQL, Laravel, HTML, CSS, JavaScript, Vue, React, Docker, Linux, Git">
+    <meta property="og:title" content="Said, web developer" />
+    <meta property="og:description"
+        content="Web developer. Skills: PHP, MySQL, PostgreSQL, Laravel, HTML, CSS, JavaScript, Vue, React, Docker, Linux, Git" />
+    <meta property="og:image" content="favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webmastersaid.github.io/" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="https://github.com/webmastersaid/" class="nav-link">
+                <span>GitHub</span>
+            </a>
+        </div>
+        <a href="/ru" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate"
+                viewBox="0 0 16 16">
+                <path
+                    d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
+                <path
+                    d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
+            </svg>
+            <span>RU</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="about">
+                <div class="about-text">
+                    <h1>Said</h1>
+                    <p>Web developer</p>
+                    <span>Skills:</span>
+                    <p>PHP, MySQL, PostgreSQL, Laravel, HTML, CSS, JavaScript, Vue, React, Docker, Linux, Git</p>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contact form</h2>
+                <form id="form" action="https://formspree.io/f/xvodqpnp" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name: <span class="red-text">*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name..." autocomplete="name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail: <span class="red-text">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter e-mail..." autocomplete="email"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Tel: </label>
+                        <input type="tel" name="tel" id="tel" placeholder="Enter phone number..." autocomplete="tel" maxlength="11">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" cols="15" rows="5"
+                            placeholder="Enter some message..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            <span class="red-text">*</span><small> - required to fill</small>
+                        </p>
+                    </div>
+                    <div class="form-btn">
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
+                    <div id="form_status" class="contact-form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="box">
+        <a class="link" href="https://github.com/webmastersaid/">© webmastersaid</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
